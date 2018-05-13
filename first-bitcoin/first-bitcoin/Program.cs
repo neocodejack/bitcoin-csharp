@@ -1,4 +1,5 @@
 ﻿using System;
+using NBitcoin;
 
 namespace first_bitcoin
 {
@@ -6,7 +7,7 @@ namespace first_bitcoin
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello World!" + new Key().GetWif(Network.Main));
         }
     }
 }
